@@ -1,0 +1,191 @@
+
+.page-content {
+    flex: 1;
+    background-color: #bb2121;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: visible;
+    min-height: 100%;
+}
+
+.enchere-title {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.enchere-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5vw;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.enchere-card {
+    flex: 0 0 20%;
+    width: 220px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.enchere-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.enchere-card-front {
+    background-color: #201e1e;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.pokemon-sprite {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #ffcc00;
+}
+
+.pokemon-name {
+    color: #ffcc00;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.pokemon-type,
+.pokemon-montant,
+.pokemon-timer,
+.pokemon-enchereur {
+    color: #ffffff;
+    margin: 6px 0;
+}
+
+.montant-value {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.timer-value {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+.enchere-card-back {
+    background-color: #201e1e;
+    border-radius: 15px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color: #ffffff;
+}
+
+.pokemon-name-back {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.enchere-button,
+.flip-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.flip-button {
+    background-color: #dc3545;
+}
+
+.enchere-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.enchere-popup-content {
+    background-color: #043d68;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.popup-pokemon-sprite {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+}
+
+.popup-pokemon-name {
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.enchere-slider {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+}
+
+.popup-buttons .enchere-button {
+    background-color: #28a745;
+}
+
+.popup-buttons .flip-button {
+    background-color: #dc3545;
+}

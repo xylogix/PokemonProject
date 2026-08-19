@@ -1,0 +1,105 @@
+.settings-page-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #262b2e;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pokemon-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.floating-pokemon {
+    position: absolute;
+    width: 80px;
+    opacity: 0.2;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.settings-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.settings-title {
+    font-size: 4rem;
+    color: #ffcc00;
+}
+
+.add-money-section {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.add-money-section h2 {
+    margin-bottom: 10px;
+    color: #932222;
+}
+
+.add-money-section input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-money-section button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.add-money-section button:hover {
+    background-color: #43a047;
+}
+
+.add-money-message {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.logout-button {
+    margin-top: 10%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logout-button:hover {
+    background-color: #2b2b2b;
+}

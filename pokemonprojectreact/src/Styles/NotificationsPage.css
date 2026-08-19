@@ -1,0 +1,102 @@
+.page-content {
+    flex: 1;
+    background-color: #bb2121;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: visible;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.page-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.notification-section-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #dad1d1;
+    font-size: 1.4rem;
+}
+
+.notification-empty {
+    text-align: center;
+    color: #555;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-item {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #201e1e;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #dad1d1;
+    cursor: pointer;
+}
+
+.notification-topline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.notification-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2a2929;
+    border-radius: 5px;
+}
+
+.notification-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.notification-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notification-actions .accept-button {
+    background-color: #4caf50;
+}
+
+.notification-actions .reject-button {
+    background-color: #f44336;
+}
+
+.loading-text {
+    text-align: center;
+}
+
+.error-text {
+    text-align: center;
+    color: red;
+}
+
+.sell-button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.sell-button:hover {
+    background-color: #fb8c00;
+}

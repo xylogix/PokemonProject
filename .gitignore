@@ -1,0 +1,27 @@
+# IDE
+.idea/
+.ideaa/
+*.iml
+.vscode/
+
+# Node
+node_modules/
+dist/
+*.log
+npm-debug.log*
+
+# Java / Gradle
+.gradle/
+build/
+target/
+*.class
+
+# H2 database files
+*.db
+*.mv.db
+*.trace.db
+biblio*
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,220 @@
+
+.page-content {
+    flex: 1;
+    background-color: #bb2121;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: visible;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.page-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pokemon-filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pokemon-filters input[type="text"],
+.pokemon-filters input[type="number"],
+.pokemon-filters select {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pokemon-table thead th {
+    background-color: #493f3f;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pokemon-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.pokemon-table tbody tr:hover {
+    background-color: #af1616;
+    cursor: pointer;
+}
+
+.pokemon-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #043d68;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.popup-content img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #ffcc00;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.popup-content input[type="range"] {
+    flex: 1;
+    cursor: pointer;
+}
+
+.popup-content input[type="number"] {
+    width: 80px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popup-content select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #393636;
+    color: #fff;
+}
+
+.popup-content button {
+    margin: 5px;
+}
+
+.popup-content button[value="cancel"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.popup-content button[value="submit"] {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+.popup-content button[value="confirm"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.popup-content button:hover {
+    filter: brightness(0.9);
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+button {
+    z-index: 10;
+}
